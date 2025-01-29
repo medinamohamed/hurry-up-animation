@@ -5,8 +5,8 @@ const AnimatedText = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [typedText1, setTypedText1] = useState('');
   const [typedText2, setTypedText2] = useState('');
-  const text1 = 'HURRY UP';
-  const text2 = 'TOMORROW';
+  const text1 = 'SLOW DOWN';
+  const text2 = 'IT\'S AN EMERGENCY';
   const typingSpeed = 100; // ms per character
 
   useEffect(() => {
@@ -154,7 +154,7 @@ const AnimatedText = () => {
       <div 
         className="absolute inset-0 pointer-events-none transition-opacity duration-1000 ease-in-out"
         style={{
-          background: 'linear-gradient(transparent, rgba(255,255,255,0.15) 50%, transparent)',
+          background: 'linear-gradient(transparent, rgba(255,255,255,0.15) 0%, transparent)',
           backgroundSize: '100% 4px',
           animation: isHovered ? 'scan 6s linear infinite' : 'none',
           opacity: isHovered ? 1 : 0,
