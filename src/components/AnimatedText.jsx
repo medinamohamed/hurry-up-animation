@@ -5,8 +5,8 @@ const AnimatedText = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [typedText1, setTypedText1] = useState('');
   const [typedText2, setTypedText2] = useState('');
-  const text1 = 'SLOW DOWN';
-  const text2 = 'IT\'S AN EMERGENCY';
+  const text1 = 'HURRY UP';
+  const text2 = 'TOMORROW';
   const typingSpeed = 100; // ms per character
 
   useEffect(() => {
